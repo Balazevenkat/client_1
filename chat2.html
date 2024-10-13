@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialog Chat Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: #007bff;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    .dialog-box {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dialog-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .dialog-content h2 {
+      margin-top: 0;
+    }
+
+    .dialog-content p {
+      margin-bottom: 20px;
+    }
+
+    .dialog-content button {
+      padding: 8px 20px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .dialog-content button:hover {
+      background-color: #0056b3;
+    }
+
+    .chat-bubble {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      display: inline-block;
+      max-width: 70%;
+      clear: both;
+    }
+
+    .user-bubble {
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: right;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <Button variant="text" startIcon={<ShoppingCartRounded />}>
+  Add item
+</Button>
+
+  <div class="icon" id="icon">&#9993;</div>
+  <div class="dialog-box" id="dialogBox">
+    <div class="dialog-content">
+      <h2>Welcome to the Chat Box!</h2>
+      <p>This is a simple dialog chat box.</p>
+      <div class="chat-bubble">How can I help you?</div>
+      <div class="chat-bubble user-bubble">Sure, what's your name?</div>
+      <div class="chat-bubble user-bubble">John Doe</div>
+      <div class="chat-bubble">Nice to meet you, John!</div>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const icon = document.getElementById('icon');
+    const dialogBox = document.getElementById('dialogBox');
+
+    icon.addEventListener('click', () => {
+      dialogBox.style.display = 'block';
+    });
+
+    function closeDialog() {
+      dialogBox.style.display = 'none';
+    }
+
+    let product{
+      Tshrit= mango;
+      Price:{
+        MRP:599,
+        discount:40%,
+      },
+    };
+
+    localStorage.setItem('Balaze','venkat');
+    import { useTheme } from '@mui/material/styles';
+
+function DeepChild() {
+  const theme = useTheme();
+  return <span>{`spacing ${theme.spacing}`}</span>;
+}
+
+  </script>
+</body>
+</html>
